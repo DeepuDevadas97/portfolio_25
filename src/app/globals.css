@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+/* Color Scheme */
+:root {
+  --color-background: #19191b;
+  --color-textColor: #ffffffb3;
+  --color-btnColor: #5454d4;
+  --color-btnHover: #6262f8;
+  --color-cardHover: #1e1e20;
+  --color-cardBg: #3d404a3d;
+  --color-logoBg: #285AFF;
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-textColor: var(--color-textColor);
+  --color-btnColor: var(--color-btnColor);
+  --color-btnHover: var(--color-btnHover);
+  --color-cardHover: var(--color-cardHover);
+  --color-cardBg: var(--color-cardBg);
+  --color-logoBg: var(--color-logoBg)
+}
+html {
+  scroll-behavior: smooth;
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+body {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #343434;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #2727b699;
+  border-radius: 4px;
+  border: 2px solid #343434;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3434d898;
+}
+
+.train-one {
+  font-family: "Train One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+}
+.text-shadow {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  margin: 0 auto;
+  padding-inline: 4%;
+  max-width: 100%;
+}
+@media (max-width: 767.98px) {
+  .container {
+    padding-inline: 16px;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    padding-inline: 6%;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    padding-inline: 12%;
+  }
+}
+
+
+.custom-spin {
+  animation: slow-spin 10s linear infinite;
+}
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.custom-bounce {
+  animation: slow-bounce 3s ease-out infinite;
+}
+@keyframes slow-bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Header navlinks styles */
+.active-dot {
+  position: relative;
+ }
+ .active-dot::after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   bottom: -14px;
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 4px;
+   height: 4px;
+   background-color: var(--color-logoBg);
+   border-radius: 50%;
+   @apply animate-bounce;
+ }
+ @media(max-width: 767.98px) {
+   .active-dot::after {
+     display: none;
+   }
+ }
+
+
+/* Banner styles */
+@media (min-width: 1600px) {
+  .profile-wrapper {
+    width: 500px;
+    height: 520px;
+  }
+}
+@media (max-height: 680px) {
+  .banner-section {
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 32px;
+  }
+}
+
+/* About Styles */
+.about-shadow {
+  background: linear-gradient(
+    to top,
+    var(--color-background),
+    #19191bb0,
+    transparent
+  );
+}
+.about-shadow-rev {
+  background: linear-gradient(
+    to bottom,
+    var(--color-background),
+    #19191bb0,
+    transparent
+  );
+}
+
+.line-animate {
+  animation: extend 10s ease-out infinite;
+}
+@keyframes extend {
+  0% {
+    width: 200%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 300%;
+  }
+}
+@media (max-width: 1024) {
+  .about-bg {
+    width: 100%;
+    left: 0;
+    background-size: 50%;
+    background-position: top;
+  }
+}
+
+/* Projects Styles */
+.card-wrap:hover img {
+  box-shadow: 3px 6px 10px #0000002a;
+}
+
+.card-wrap .visit-site {
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+  box-shadow: 4px 8px 14px #00000050;
+  opacity: 0;
+}
+.card-wrap:hover .visit-site {
+  left: 50%;
+  opacity: 1;
+}
+
+@media (min-width: 1760px) {
+  .card-wrap {
+    height: 330px;
+  }
+}
+@media (min-width: 2000px) {
+  .card-wrap {
+    height: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .card-wrap {
+    height: 372px;
+  }
+}
+@media (max-width: 520px) {
+  .card-wrap {
+    height: 340px;
+  }
+}
+@media (max-width: 470px) {
+  .card-wrap {
+    height: 300px;
+  }
+}
+@media (max-width: 420px) {
+  .card-wrap {
+    height: 270px;
+  }
+}
+@media (max-width: 380px) {
+  .card-wrap {
+    height: 246px;
+  }
+}
+@media (max-width: 350px) {
+  .card-wrap {
+    height: 224px;
+  }
+}
