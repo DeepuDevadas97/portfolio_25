@@ -49,7 +49,7 @@ const Projects = () => {
             <h2 className="train-one text-[28px] md:text-[40px] xl:text-[46px] text-white opacity-80 uppercase mb-10 md:mb-20 max-lg:text-center">
               My Recent Work
             </h2>
-            <div className="w-[32px] sm:w-[42px] absolute right-[1%] bottom-[-35%] custom-spin">
+            <div className="w-[32px] sm:w-[42px] absolute right-[1%] bottom-[-35%] custom-spin max-sm:hidden">
               <Image
                 src={"/images/banner2.svg"}
                 width={42}
@@ -59,70 +59,6 @@ const Projects = () => {
               />
             </div>
           </div>
-
-          {/* <div className="min-h-[300px]">
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="project-wrapper w-full lg:relative">
-              <div className="group relative lg:top-0 lg:left-0 w-full h-[286px] rounded-[14px] p-6 duration-500 bg-cardBg hover:bg-cardHover card-wrap overflow-hidden">
-                <Image
-                  src={"/images/brackenberry.png"}
-                  width={300}
-                  height={286}
-                  alt="brackenberry"
-                  className="w-full h-full rounded-xl duration-500 group-hover:brightness-75"
-                />
-                <Link
-                  href={"https://www.brackenberry.com/"}
-                  target="_blank"
-                  className="w-[80px] h-[80px] rounded-full bg-black/80 flex items-center justify-center text-white
-                font-thin nunito-sans visit-site text-[16px] xl:text-[18px] cursor-pointer border border-white/30 ease-in-out"
-                >
-                  Visit
-                </Link>
-              </div>
-            </div>
-
-            <div className="project-wrapper w-full lg:relative">
-              <div className="group relative lg:top-15 lg:left-0 w-full h-[286px] rounded-[14px] p-6 duration-500 bg-cardBg hover:bg-cardHover card-wrap overflow-hidden">
-                <Image
-                  src={"/images/leet91.png"}
-                  width={300}
-                  height={286}
-                  alt="leet9"
-                  className="w-full h-full rounded-xl duration-500 group-hover:brightness-75"
-                />
-                <Link
-                  href={"https://leet9.com/"}
-                  target="_blank"
-                  className="w-[80px] h-[80px] rounded-full bg-black/80 flex items-center justify-center text-white
-                font-thin nunito-sans visit-site text-[16px] xl:text-[18px] cursor-pointer border border-white/30 ease-in-out"
-                >
-                  Visit
-                </Link>
-              </div>
-            </div>
-
-            <div className="project-wrapper w-full lg:relative">
-              <div className="group relative lg:top-30 lg:left-0 w-full h-[286px] rounded-[14px] p-6 duration-500 bg-cardBg hover:bg-cardHover card-wrap overflow-hidden">
-                <Image
-                  src={"/images/alice-care1.png"}
-                  width={300}
-                  height={286}
-                  alt="alice-care"
-                  className="w-full h-full rounded-xl duration-500 group-hover:brightness-75"
-                />
-                <Link
-                  href={"https://www.alice.care/"}
-                  target="_blank"
-                  className="w-[80px] h-[80px] rounded-full bg-black/80 flex items-center justify-center text-white
-                font-thin nunito-sans visit-site text-[16px] xl:text-[18px] cursor-pointer border border-white/30 ease-in-out"
-                >
-                  Visit
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div> */}
 
           <div className="min-h-[300px]">
             <div className="grid lg:grid-cols-3 gap-8">
