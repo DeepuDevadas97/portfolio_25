@@ -40,7 +40,7 @@ const About = () => {
               experience. I have successfully delivered{" "}
               <span className="text-btnColor">25+ projects</span> for clients
               across India and internationally, including regions like the UAE,
-              UK, and Malaysia.
+              UK, and USA.
             </p>
             <div className="flex justify-center">
               <Button />
