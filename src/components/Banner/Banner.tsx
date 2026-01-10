@@ -1,36 +1,3 @@
-// import Image from "next/image";
-// import React from "react";
-
-// const Banner = () => {
-//   return (
-//     <div className="w-full h-screen bg-[#452c63] relative">
-//       <div className="absolute w-full h-[557px] bottom-[-30px] right-0">
-//         <Image
-//           src={"/images/banner-layer.webp"}
-//           width={1000}
-//           height={557}
-//           alt="banner-layer"
-//           className="w-full h-full"
-//         />
-//       </div>
-//       <div className="container">
-//         <div className="grid md:grid-cols-2">
-//           <div className="flex justify-center items-center">
-//             <h1 className="train-one text-[59px] text-white">HELLO I AM</h1>
-//           </div>
-//           <div className="h-screen flex items-center justify-center">
-//             <div className="w-[440px] h-[440px] bg-[url('/images/profile-layer.webp')] bg-cover bg-center flex items-center justify-center mr-15 mt-10">
-//               <div className="w-[70%] h-[70%] rounded-full bg-[url('/images/profile-img.webp')] bg-cover bg-center border-[8px] border-[#452c63] relative"></div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Banner;
-
 import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
@@ -51,7 +18,7 @@ const Banner = () => {
               </h1>
               <p className="max-w-[640px] mt-3 sm:mt-4 text-textColor text-[16px] md:text-[21px] nunito-sans font-thin leading-[28px] md:leading-[32px] mb-[32px] sm:mb-[50px] max-sm:text-center">
                 {" "}
-                An innovative Front-end Developer with around 4 years of
+                An innovative Front-end Developer with around 5 years of
                 experience. I have serious passion for UI effects, animations
                 and creating intuitive, dynamic user experiences...
               </p>

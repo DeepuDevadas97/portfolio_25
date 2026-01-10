@@ -6,8 +6,8 @@ import Download from "../../../public/icons/Download";
 const Button = () => {
   const handleDownload = (): void => {
     const link = document.createElement("a");
-    link.href = "/pdf/Deepu-Resume-25.pdf";
-    link.download = "Deepu-Resume-25.pdf";
+    link.href = "/pdf/Deepu-Resume-26.pdf";
+    link.download = "Deepu-Resume-26.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

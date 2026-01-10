@@ -28,9 +28,9 @@ const About = () => {
               About Me
             </h2>
             <p className="max-w-[640px] text-textColor text-[16px] md:text-[21px] nunito-sans font-thin leading-[28px] md:leading-[32px] mb-[32px] sm:mb-[50px] text-left">
-              Hi, I am a front-end developer with 4 years of professional
-              experience, currently working at Coddle Technologies Pvt. Ltd,
-              Calicut, Kerala. I specialize in creating seamless{" "}
+              Hi, I am a front-end developer with 5 years of professional
+              experience, currently working at CAPITAIRE Consulting,
+              Cochin, Kerala. I specialize in creating seamless{" "}
               <span className="text-btnColor">UI/UX designs</span> and
               converting design files into high-performance web applications
               using <span className="text-btnColor">React.js</span> and{" "}
